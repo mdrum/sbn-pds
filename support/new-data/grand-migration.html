@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <base href="/pds/" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>What Changed in the Migration of Dawn GRaND to PDS4? | PDS SBN Asteroid/Dust Subnode</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main20210813.css">
+    <link rel="stylesheet" href="css/header20210331.css">
+    <link rel="stylesheet" href="css/footer20210331.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    <!-- PDS Feedback Widget -->
+    <!-- Only add JQuery if you do not already include a library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+    <link rel="stylesheet" href="feedback/css/feedback.css"  type="text/css" media="screen" />
+    <script src="feedback/js/modernizr-custom.js"></script>
+    <script src="feedback/js/config.js"></script>
+    <script src="feedback/js/feedback.js"></script>
+    <!-- -->
+
+
+    </head>
+<body>
+
+    <!-- BEGIN sbn-header -->
+
+<header>
+    <div id="sbn-header">
+
+        <div class="sbn-title-container">
+            <div class="sbn-title"><a class="ignore-a-styling" href="http://pdssbn.astro.umd.edu/">PDS Small Bodies Node</a></div>
+            <a class="sbn-subtitle ignore-a-styling" href="">Asteroid/Dust Subnode</a>
+        </div>
+        <div class="gradient-bar"></div>
+    </div>
+</header>
+<nav>
+    
+    <div id="menu-backdrop"></div>
+    <div id="menu-drawer">
+        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </div>
+
+    <div id="theme-switch">
+        <label for="theme-switch-checkbox">
+            <input type="checkbox" id="theme-switch-checkbox" />
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 24 24" width="30" title="Change light/dark theme">
+                <title>Change light/dark theme</title>
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z" />
+            </svg>
+      </label>
+    </div>
+    <div id="menu">
+        <div class="menu-handle">
+            <div>Find Data</div>
+            <ul class="menu-list">
+                <li><a href="">Archive Home</a></li>
+                <li class="divider"></li>
+                <li><a href="archive/data-types.html"> Browse by Data Type</a></li>
+                <li><a href="archive/target-types.html"> Browse by Target Type</a></li>
+                <li><a href="archive/missions.html"> Browse by Mission</a></li>
+                <li class="divider"></li>
+                <li><a href="ferret/">Ferret - Target Search</a></li>
+                <li><a href="sbib/">SBIB - Image Search</a></li>
+                <li><a href="https://catch.astro.umd.edu/">CATCH - Survey Search</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>Archive Data</div>
+            <ul class="menu-list">
+                <li><a href="olafs">OLAF - Archive your data</a></li>
+                <li><a href="sbnarchivinghowto.html">How to Archive</a></li>
+                <li><a href="other_tools/pdf1a.html">PDF/A Tools</a></li>
+                <li><a href="https://pds.nasa.gov/datastandards/documents/current-version.shtml">PDS4 Standards</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>Support</div>
+            <ul class="menu-list">
+                <li><a href="support/">Support Home</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="support/Tips.html">Tips & Tricks Articles <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="24px" class="callout-svg-icon"><title>New!</title><path d="M0 0h24v24H0z" fill="none"/><path d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></a></li>
+                <li><a href="support/FAQ.html">Frequently Asked Questions</a></li>
+                <li><a href="support/Keyterms.html">Key Terms</a></li>
+                <li><a href="support/Glossary.html">Full Glossary</a></li>
+                <li class="divider"></li>
+                <li><a href="https://pds.nasa.gov/home/proposers/">Information for Data Proposers</a></li>
+                <li><a href="https://sbnwiki.astro.umd.edu/wiki/SBN_PDS4_Wiki">PDS4 Tutorials and Quick Ref</a></li>
+                <li><a href="http://pdssbn.astro.umd.edu/howto/understand.shtml">Using PDS Data</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>PDS Info</div>
+            <ul class="menu-list">
+                <li><a href="aboutastsubnode.html">About SBN Asteroid Subnode</a></li>
+                <li><a href="http://pdssbn.astro.umd.edu/">SBN Comet Subnode</a></li>
+                <li><a href="http://pds.nasa.gov/">PDS Home</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<div id="search-bar" class="search-container">
+    <div class="search-box" v-bind:class="{focused: focused}">
+        <svg class="search-icon" viewBox="0 0 100 125">
+            <path d="M35.285,8L85,28.228L52.303,70.575l-4.715-17.337C33,59.622,16.45,72.294,43.672,92c0,0-37.15-4.02-26.875-39.512    c0,0,4.692-16.873,23.799-24.958L35.285,8z" />
+        </svg>
+        <div class="input-field">
+            <input tabindex="0" placeholder="Shortcut to data by keyword..." type="text" aria-label="Shortcut to data by keyword"
+                v-model="query"
+                v-on:focus="onFocus"
+                v-on:keyup="keypress">
+        </div>
+    </div>
+    <div class="search-filter" v-if="focused">
+        <label class="toggle-option" v-bind:class="{focused: mode === 'asteroid'}">Asteroid/Dust <input type="radio" v-model="mode" value="asteroid"></label>
+        <label class="toggle-option" v-bind:class="{focused: mode === 'pds'}">PDS <input type="radio" v-model="mode" value="pds"></label>
+    </div>
+    <ul class="search-results" v-if="query.length > 0 && focused">
+        <template v-for="result in searchResults">
+            <li class="search-result" >
+                <a v-bind:href="result.url" v-bind:title="title(result)" tabindex="0">{{result.name}}</a>
+            </li>
+        </template>
+        <p class="no-results" v-if="searchResults.length === 0">No results found</p>
+        <p class="no-results" v-if="searchResults.length === 0">Need help finding something? <a href="contact.html">Contact Us</a></p>
+    </ul>
+</div>
+
+</nav>
+
+
+<!-- END sbn-header -->
+
+
+    <main><div class="sbn-main " >
+    <!-- BEGIN main content -->
+
+    <ol class="breadcrumbs">
+    <li><a href="">Home</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/">Support</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/Tips.html">Tips & Tricks</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/new-data/">New Data</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li>What Changed in the Migration of Dawn GRaND to PDS4?</li>
+</ol> 
+<br/>
+
+<h1 class="post-title">What Changed in the Migration of Dawn GRaND to PDS4?</h1>
+<p class="post-subtitle secondary">Aug 24, 2021 
+    
+</p>
+
+<p class="secondary"><em> Part of a series on <a href="support/new-data/">New Data</a> </em></p>
+
+
+<div class="social-post">
+    <h2 id="introduction">Introduction</h2>
+
+<p>The Gamma Ray and Neutron Detector (GRaND) is a nuclear spectrometer which flew on the Dawn mission to the two largest bodies in the main asteroid belt, asteroid Vesta and dwarf planet Ceres.  There it measured gamma rays and neutrons resulting from galactic cosmic ray interactions and the decay of radioactive elements within the regolith of the target bodies, providing chemical insights into their formation and evolution.  As well as its primary mission targets, GRaND observed cosmic rays, solar flare X-rays, solar energetic particles, and gamma-ray bursts from massive explosions in distant galaxies.</p>
+
+<figure><img src="https://pdsregistryimages.psi.edu/tips/grand-migration/GRaND_Fig_1.png" /><figcaption>GRaND measures the chemical fingerprint of elements up to 1 meter below the surface by detecting neutrons and gamma rays produced by the interaction of galactic cosmic rays with nuclei within the surface, and by radioactive decay (Prettyman et al., 2019b,c)</figcaption></figure>
+
+<p>The GRaND data, along with the data from the other Dawn mission instruments, were originally archived in the NASA PDS Small Bodies Node (SBN) in a now-obsolete archiving standard called PDS3.  In 2021, SBN and the GRaND team worked together to migrate the GRaND archive to the modern PDS archiving standard PDS4.  To enable users to make the most of the rich GRaND data set, the powerful capabilities of the PDS4 standard were utilized to enhance the value of the data set.</p>
+
+<h2 id="overview-of-changes">Overview of Changes</h2>
+
+<p>In migrating the GRaND archive from PDS3 to PDS4, no changes were made to the data files themselves.  The metadata were enhanced and the documentation extensively updated and improved.  A key feature of PDS4 is the use of open-standard eXtensible Markup Language (XML), which provides more flexible and descriptive labelling of data files, enabling advances in software and database capabilities to be leveraged.  Taking advantage of these PDS4 capabilities, new software tools were developed by the Dawn mission’s GRaND team for easy access and processing of GRaND data.</p>
+
+<h2 id="improved-metadata">Improved Metadata</h2>
+
+<p>The GRaND PDS4 archive makes use of the nuclear spectroscopy data dictionary (NucSpec), developed by the PDS Small Bodies Node with input from the planetary community.  NucSpec provides metadata associating specific observations with instrument settings and parameters, enabling efficient identification of records for analysis.  The instrument settings are provided in a newly added GRaND instrument state table, including the configuration of subsystems, photomultiplier tube high voltages, and counting window parameters.</p>
+
+<p>In addition, metadata are provided to identify solar energetic particles (SEPs), solar flares, gamma-ray bursts (GRBs) and other phenomena of interest to the space and astrophysics communities.  Data glitches and anomalies are also flagged.</p>
+
+<h2 id="new-tools">New Tools</h2>
+
+<p>In conjunction with the migration, the GRaND team developed software tools to work with the GRaND data set using the enriched PDS4 metadata.  The software, written in the Interactive Data Language (IDL), reads the data and parses the data labels, extracting metadata useful for analysis including mission phase and target information, instrument settings, and observing conditions.  This GRaND Software Toolbox is available on NASA GitHub.</p>
+
+<p>In addition to the tools specific to the GRaND archive, the PDS offers the more general PDS4 Viewer which can be used to read and plot PDS4 data and examine the labels in a human-readable format.</p>
+
+<h2 id="updated-documentation">Updated Documentation</h2>
+
+<p>The GRaND documentation set has been generally revised and updated to incorporate the information and understanding gained from working with the data set in the years since it was originally archived.  A new Archive Description document was prepared as a detailed guide to understanding and working with the GRaND archive.</p>
+
+<h1 id="the-grand-archive-now-new-and-improved">The GRaND Archive, Now New and Improved</h1>
+
+<p>The GRaND data migration allowed for improvements to be made in many aspects of the archive. Not only were there enhancements in meta data, documentation, and new tools, but the use of the new more powerful PDS4 data standards have combined to make the archive an easy to use and rich source of data.</p>
+
+<h2 id="resources-and-further-reading">Resources and Further Reading</h2>
+
+<p><a href="https://arcnav.psi.edu/urn:nasa:pds:context:instrument:dawn.grand">The Dawn GRaND PDS4 Archive at the Planetary Data System</a></p>
+
+<p><a href="https://sbnarchive.psi.edu/pds4/dawn/grand/dawn-grand-ancillary_1.0/document/Dawn_GRaND_archive_description.pdf">The GRaND PDS4 Archive Description</a></p>
+
+<p><a href="https://github.com/nasa/dawn-grand-toolbox">The GRaND Software Toolbox at NASA GitHub</a></p>
+
+<p><a href="https://sbnwiki.astro.umd.edu/wiki/PDS4_Viewer">PDS4 Viewer</a></p>
+
+<p><a href="https://pdsregistryimages.psi.edu/tips/grand-migration/GRaND_migration_AGU_Poster.pdf">AGU 2020 Poster about the GRaND PDS4 Archive</a> (Prettyman et al. 2020)</p>
+
+<h2 id="references">References</h2>
+
+<p>Prettyman T.H., Englert P.A.J., Yamashita N. &amp; Landis M.E. (2019b) Neutron, gamma-ray, and X-ray spectroscopy of planetary bodies. Pp. 588-603 in: Remote Compositional Analysis (J.L. Bishop, J.F. Bell &amp; J.E. Moersch, eds). Cambridge University Press, Cambridge.</p>
+
+<p>Prettyman T.H., Englert P.A.J. &amp; Yamashita N. (2019c) Neutron, gamma-ray, and X-ray spectroscopy: Theory and applications. Pp. 191-238 in: Remote Compositional Analysis (J.L. Bishop, J.F. Bell &amp; J.E. Moersch, eds). Cambridge University Press, Cambridge.</p>
+
+<p>Prettyman, T.H., Yamashita, N., Stone, J., Neese, C., Palmer, E.E. (2020). The GRaND migration project: State-of-the-art archive and tools for space science.  AGU Fall Meeting Abstracts.</p>
+
+
+</div>
+
+
+    <!-- END main content -->
+    </div></main>
+
+    <!-- BEGIN sbn-footer -->
+
+<footer class="sbn-footer">
+    <p class="sbn-footer-text">
+        For questions about the data sets or this web site, contact Carol Neese (<a href="mailto:neese@psi.edu" class="link">neese@psi.edu</a>).
+    </p>
+</footer>
+
+<div class="sbn-footer-extended">
+    <aside class="sbn-footer-psi-container">
+        <img src="images/PSI_Logo.png" alt="PSI Logo" title="PSI Logo" class="psi-logo">
+        <span>Hosted by the Planetary Science Institute</span>
+    </aside>
+</div>
+
+<!-- END sbn-footer -->
+
+
+    
+
+
+    <script src="js/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/search-data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/scripts20210813.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

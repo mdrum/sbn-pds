@@ -1,5 +1,0 @@
-name: PDS SBN Asteroid/Dust Subnode
-title: PDS SBN Asteroid/Dust Subnode
-permalink: /support/:slugified_categories/:title:output_ext
-future: true
-exclude: ["Dockerfile","README.md","*.sh"]
