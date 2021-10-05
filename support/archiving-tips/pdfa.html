@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <base href="/pds/" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>PDF/A Stuff | PDS SBN Asteroid/Dust Subnode</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main20210813.css">
+    <link rel="stylesheet" href="css/header20210331.css">
+    <link rel="stylesheet" href="css/footer20210331.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    <!-- PDS Feedback Widget -->
+    <!-- Only add JQuery if you do not already include a library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+    <link rel="stylesheet" href="feedback/css/feedback.css"  type="text/css" media="screen" />
+    <script src="feedback/js/modernizr-custom.js"></script>
+    <script src="feedback/js/config.js"></script>
+    <script src="feedback/js/feedback.js"></script>
+    <!-- -->
+
+
+    </head>
+<body>
+
+    <!-- BEGIN sbn-header -->
+
+<header>
+    <div id="sbn-header">
+
+        <div class="sbn-title-container">
+            <div class="sbn-title"><a class="ignore-a-styling" href="http://pdssbn.astro.umd.edu/">PDS Small Bodies Node</a></div>
+            <a class="sbn-subtitle ignore-a-styling" href="">Asteroid/Dust Subnode</a>
+        </div>
+        <div class="gradient-bar"></div>
+    </div>
+</header>
+<nav>
+    
+    <div id="menu-backdrop"></div>
+    <div id="menu-drawer">
+        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </div>
+
+    <div id="theme-switch">
+        <label for="theme-switch-checkbox">
+            <input type="checkbox" id="theme-switch-checkbox" />
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 24 24" width="30" title="Change light/dark theme">
+                <title>Change light/dark theme</title>
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z" />
+            </svg>
+      </label>
+    </div>
+    <div id="menu">
+        <div class="menu-handle">
+            <div>Find Data</div>
+            <ul class="menu-list">
+                <li><a href="">Archive Home</a></li>
+                <li class="divider"></li>
+                <li><a href="archive/data-types.html"> Browse by Data Type</a></li>
+                <li><a href="archive/target-types.html"> Browse by Target Type</a></li>
+                <li><a href="archive/missions.html"> Browse by Mission</a></li>
+                <li class="divider"></li>
+                <li><a href="ferret/">Ferret - Target Search</a></li>
+                <li><a href="sbib/">SBIB - Image Search</a></li>
+                <li><a href="https://catch.astro.umd.edu/">CATCH - Survey Search</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>Archive Data</div>
+            <ul class="menu-list">
+                <li><a href="olafs">OLAF - Archive your data</a></li>
+                <li><a href="sbnarchivinghowto.html">How to Archive</a></li>
+                <li><a href="other_tools/pdf1a.html">PDF/A Tools</a></li>
+                <li><a href="https://pds.nasa.gov/datastandards/documents/current-version.shtml">PDS4 Standards</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>Support</div>
+            <ul class="menu-list">
+                <li><a href="support/">Support Home</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="support/Tips.html">Tips & Tricks Articles <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="24px" class="callout-svg-icon"><title>New!</title><path d="M0 0h24v24H0z" fill="none"/><path d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></a></li>
+                <li><a href="support/FAQ.html">Frequently Asked Questions</a></li>
+                <li><a href="support/Keyterms.html">Key Terms</a></li>
+                <li><a href="support/Glossary.html">Full Glossary</a></li>
+                <li class="divider"></li>
+                <li><a href="https://pds.nasa.gov/home/proposers/">Information for Data Proposers</a></li>
+                <li><a href="https://sbnwiki.astro.umd.edu/wiki/SBN_PDS4_Wiki">PDS4 Tutorials and Quick Ref</a></li>
+                <li><a href="http://pdssbn.astro.umd.edu/howto/understand.shtml">Using PDS Data</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>PDS Info</div>
+            <ul class="menu-list">
+                <li><a href="aboutastsubnode.html">About SBN Asteroid Subnode</a></li>
+                <li><a href="http://pdssbn.astro.umd.edu/">SBN Comet Subnode</a></li>
+                <li><a href="http://pds.nasa.gov/">PDS Home</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<div id="search-bar" class="search-container">
+    <div class="search-box" v-bind:class="{focused: focused}">
+        <svg class="search-icon" viewBox="0 0 100 125">
+            <path d="M35.285,8L85,28.228L52.303,70.575l-4.715-17.337C33,59.622,16.45,72.294,43.672,92c0,0-37.15-4.02-26.875-39.512    c0,0,4.692-16.873,23.799-24.958L35.285,8z" />
+        </svg>
+        <div class="input-field">
+            <input tabindex="0" placeholder="Shortcut to data by keyword..." type="text" aria-label="Shortcut to data by keyword"
+                v-model="query"
+                v-on:focus="onFocus"
+                v-on:keyup="keypress">
+        </div>
+    </div>
+    <div class="search-filter" v-if="focused">
+        <label class="toggle-option" v-bind:class="{focused: mode === 'asteroid'}">Asteroid/Dust <input type="radio" v-model="mode" value="asteroid"></label>
+        <label class="toggle-option" v-bind:class="{focused: mode === 'pds'}">PDS <input type="radio" v-model="mode" value="pds"></label>
+    </div>
+    <ul class="search-results" v-if="query.length > 0 && focused">
+        <template v-for="result in searchResults">
+            <li class="search-result" >
+                <a v-bind:href="result.url" v-bind:title="title(result)" tabindex="0">{{result.name}}</a>
+            </li>
+        </template>
+        <p class="no-results" v-if="searchResults.length === 0">No results found</p>
+        <p class="no-results" v-if="searchResults.length === 0">Need help finding something? <a href="contact.html">Contact Us</a></p>
+    </ul>
+</div>
+
+</nav>
+
+
+<!-- END sbn-header -->
+
+
+    <main><div class="sbn-main " >
+    <!-- BEGIN main content -->
+
+    <ol class="breadcrumbs">
+    <li><a href="">Home</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/">Support</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/Tips.html">Tips & Tricks</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/archiving-tips/">Archiving Tips</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li>PDF/A Stuff</li>
+</ol> 
+<br/>
+
+<h1 class="post-title">PDF/A Stuff</h1>
+<p class="post-subtitle secondary">Sep 07, 2021 
+    
+    (by Jesse Stone)
+    
+</p>
+
+<p class="secondary"><em> Part of a series on <a href="support/archiving-tips/">Archiving Tips</a> </em></p>
+
+
+<div class="social-post">
+    <h2 id="1-why-pdfa">1. Why PDF/A</h2>
+
+<p>Imagine that you finally get a PDF copy of a paper that you need. When you open it, you find that it’s password protected. Now, you have to hunt down the password, either by finding it on another website, or contacting the author or the journal. Once you open it, the paper has images that are missing, because the PDF needs to download them, but you’re on a plane, and can’t access the internet. On top of that, while you are reading the document, a video is playing on the bottom of the page, making it hard to focus on the text. Shouldn’t PDF documents be more like a printed page? Shouldn’t they be complete at the time you download them? These are some of the problems that PDF/A tries to address.</p>
+
+<h3 id="the-pds4-requirement-for-pdfa">The PDS4 Requirement for PDF/A</h3>
+
+<p>PDS is dedicated to archiving data for the long term, not only for today’s users, but for future generations. This means that data in the PDS should stand on its own, without the need for support websites, or even the internet itself. This means that we need documents that stand on their own, as well, that will always be viewable, and that don’t require special software to understand. PDF/A, which is designed for archiving printed documents, is well aligned with these goals, since they are also designed to stand on their own, without the need for services that could disappear at any time.</p>
+
+<h2 id="2-pdfa-vs-pdf">2. PDF/A vs PDF</h2>
+
+<figure><img src="https://pdsregistryimages.psi.edu/tips/pdfa/PDFASummary.jpg" /><figcaption>PDF/A Features and Restrictions</figcaption></figure>
+
+<h3 id="what-does-pdfa-guarantee">What does PDF/A guarantee?</h3>
+
+<ul>
+  <li>Color management</li>
+  <li>Embedded fonts</li>
+</ul>
+
+<h3 id="what-does-pdfa-leave-out">What does PDF/A leave out?</h3>
+
+<p>Luckily the features that PDF/A leaves out doesn’t generally affect documents that are designed to be printed.</p>
+
+<ul>
+  <li>Encryption</li>
+  <li>Scripts</li>
+  <li>Multimedia</li>
+  <li>External references (downloadable fonts, images, etc)</li>
+  <li>Embedded files</li>
+</ul>
+
+<h3 id="the-dreaded-font-copyrights">The Dreaded Font Copyrights</h3>
+
+<ul>
+  <li>This is a surprising issue to many people. Nobody thinks about the copyright status of their <em>fonts</em>. PDF/A does. The fonts that you use for your document must be legally embeddable. Microsoft states that its software will only allow you to embed fonts that are legal to be embedded (https://docs.microsoft.com/en-us/typography/fonts/font-faq).  As a general rule, the fonts that came with the software will be okay to embed; however, if you want full control, you can use fonts that are freely licensed, such as the <a href="https://fonts.google.com/">Google Fonts</a>, or the <a href="https://github.com/liberationfonts/liberation-fonts">Liberation Fonts</a>.</li>
+</ul>
+
+<h3 id="pdfa-profiles">PDF/A Profiles</h3>
+
+<figure><img src="https://pdsregistryimages.psi.edu/tips/pdfa/PDFACompatibility.jpg" /><figcaption>PDF/A Compatibility with PDS4</figcaption></figure>
+
+<p>PDF/A comes in many varieties, referred to as profiles. Profiles are the specific sets of validation rules that each document conforms to. The profiles that the PDS uses are PDF/A 1-A and PDF/A 1-B.</p>
+
+<h4 id="pdfa-1-a-and-1-b">PDF/A 1-A and 1-B</h4>
+
+<p>PDFA 1-A and 1-B are the earliest versions of the PDF/A standard that were drafted. They are also the simplest, and suitable to archiving most printable content. These are also the only files that are accepted by the PDS. 1-A is more restrictive than 1-B, but all 1-A files are also valid 1-B files.</p>
+
+<p>1-A documents are technically similar to 1-B, but they have additional accessibility and semantic features.</p>
+
+<h4 id="other-profiles">Other Profiles</h4>
+
+<p>There are other versions of PDF/A out there that add new features, but are not backwards-compatible with PDF/A 1-A. For instance, a PDF/A 2-A document may not be a valid PDF/A 1-A or 1-B document. Unfortunately, due to the additional features that these documents add, it may not even be possible to convert the documents down to 1-A or 1-B. These are not currently accepted by the PDS.</p>
+
+<h2 id="3-how-to-create-a-pdfa">3. How to create a PDF/A</h2>
+
+<h3 id="creating-a-pdfa-from-scratch">Creating a PDF/A from scratch</h3>
+
+<h4 id="mirosoft-office">Mirosoft Office</h4>
+
+<p>The Windows version of Microsoft Office supports PDF-A 1-B export. Choose <code class="language-plaintext highlighter-rouge">File -&gt; Export -&gt; Create PDF/XPS</code>. Check the “ISO 19005-1 Compliant (PDF/A)” checkbox and click OK.</p>
+
+<h4 id="libreoffice">LibreOffice</h4>
+
+<p>LibreOffice is a free and open source replacement for Microsoft Office. It is available on all major desktop platforms. To export a PDF/A, select <code class="language-plaintext highlighter-rouge">File -&gt; Export... -&gt; Export as PDF...</code>. You will then see a menu with several PDF export options. Make sure that “Archive (PDF/A, ISO 19005)” is checked, and select PDF/A 1-b under “PDF/A version”. Then click “Export” and you are done!</p>
+
+<h4 id="adobe-acrobat">Adobe Acrobat</h4>
+
+<p>Abobe Acrobat supports 1-A and 1-B export. There are multiple ways to do this in Acrobat. See (https://helpx.adobe.com/acrobat/using/pdf-x-pdf-a-pdf.html) for more information.</p>
+
+<h3 id="converting-a-pdfa">Converting a PDF/A</h3>
+
+<p>If you don’t have a source document, and only have a PDF document to work with, you may still be able to convert the PDF to PDF/A. Several programs are available that will help with this. However, no matter which one you choose, make sure that you visually inspect your document, to make sure that it’s formatting hasn’t changed out from under you. PDF is difficult to read in and convert faithfully (which is why we are doing this in the first place).</p>
+
+<h4 id="adobe-acrobat-1">Adobe Acrobat</h4>
+
+<p>Adobe Acrobat is probably your best choice for converting PDF/A documents. In Adobe Acrobat DC, you can choose <code class="language-plaintext highlighter-rouge">File -&gt; Save as Other -&gt; Archivable PDF (PDF/A)</code>. Adobe supports several other programs, and there are other ways to do this that give you more fine-grained control. See (https://helpx.adobe.com/acrobat/using/pdf-x-pdf-a-pdf.html) for more information.</p>
+
+<h4 id="libreoffice-1">LibreOffice</h4>
+
+<p>Libre Office can import PDF documents and re-export them as PDF/A, as described above. However, you’ll need to spend some time cleaning up the document. You may run into font issues, or your paragraphs may be out of order.</p>
+
+<h4 id="ghostscript">GhostScript</h4>
+
+<p>If you are good with the command line, GhostScript will generally do a good job of converting PDF documents to PDF/A. However, you will need to define several Postscript commands to help with this, and find a color profile that is suitable. Check (https://github.com/sbn-psi/data-provider-tools/tree/master/pdf2pdfa) for a good place to start. The greatest advantage of this method is that it can be automated as part of a document pipeline, and it can also convert a large group of files at once.</p>
+
+<h4 id="online-converters">Online Converters</h4>
+
+<p>Online converters are an easy way to convert small batches of PDF documents. One converter that seems relatively easy to use is PDFTron (https://www.pdftron.com/pdf-tools/pdfa-converter/). Just drag your file onto the page, then select the output profile that you want, and click “Convert”. The biggest issue with online converters is that they are more difficult to work with for large batches of files, and you are giving a copy of your file to a third party. Make sure that you are comfortable with this before uploading it.</p>
+
+<h3 id="what-wont-work">What Won’t Work</h3>
+
+<p>Many applications don’t support PDF/A, but in this section, we’ll cover applications that seem to support PDF/A, but don’t actually work for some reason.</p>
+
+<h4 id="big-sur">Big Sur</h4>
+
+<p>MacOS Big Sur has a PDF/A converter in the preview app, but it currently uses a profile that PDS can’t accept. There is a chance that it will be eventually updated to support 1-A or 1-B (or the PDS may start accepting other profiles), but for now, it can’t be used.</p>
+
+<h2 id="4-how-to-validate-a-pdfa-file">4. How to validate a PDF/A file</h2>
+
+<h3 id="verapdf">VeraPDF</h3>
+
+<p>VeraPDF is a PDF/A validator that supports every profile level of PDF/A, and has both a usable GUI and command line interface. This is the best bet, if your system runs Java.</p>
+
+<h3 id="apache-pdfbox">Apache PDFBox</h3>
+
+<p>PDFBox is another strong candidate, if you have a system that supports Java. However, it is a code library, and not a direct tool, so it is mostly useful if you want to include PDF/A validation in an application.</p>
+
+<h3 id="other-validators">Other Validators</h3>
+
+<p>Other PDF/A validators are available, such as the 3-Heights validator, or the Solid Documents validator. However, they are not free so we have not evaluated them. But they do exist.</p>
+
+<h3 id="online-validators">Online validators</h3>
+
+<p>The online validator that I personally have had the most success with is the Solid Documents PDF/A validator, at (http://www.validatepdfa.com/). This works by emailing them your document, and they will email you back a validation report. This takes some time, however, and it can be hard to keep track of multiple versions of the same document, so it is probably only suitable for small batches.</p>
+
+<h2 id="5-conclusion">5. Conclusion</h2>
+
+<p>PDF/A Documents are a great format for long-term, archiving, since they are designed as standalone files, and remove obstacles to usabilty. They are so well suited that they are the standard document archivng format for PDS. There are many ways to create a PDF/A document, either from scratch or by converting an existing PDF document. Once a PDF/A document is created, it will have to be validated to ensure conformance. This process will ensure that your documents are ready to be archived in the PDS.</p>
+
+</div>
+
+
+    <!-- END main content -->
+    </div></main>
+
+    <!-- BEGIN sbn-footer -->
+
+<footer class="sbn-footer">
+    <p class="sbn-footer-text">
+        For questions about the data sets or this web site, contact Carol Neese (<a href="mailto:neese@psi.edu" class="link">neese@psi.edu</a>).
+    </p>
+</footer>
+
+<div class="sbn-footer-extended">
+    <aside class="sbn-footer-psi-container">
+        <img src="images/PSI_Logo.png" alt="PSI Logo" title="PSI Logo" class="psi-logo">
+        <span>Hosted by the Planetary Science Institute</span>
+    </aside>
+</div>
+
+<!-- END sbn-footer -->
+
+
+    
+
+
+    <script src="js/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/search-data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/scripts20210813.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
