@@ -1,5 +1,3 @@
----
----
 #sbn-header {
     width: 100%;
     background-color: #000;
@@ -36,11 +34,9 @@
 }
 
 .sbn-title a:hover::after {
-    {% if jekyll.environment == "production" %} 
+     
     background-image: url('/pds/images/external.svg');
-    {% else %}
-    background-image: url('/images/external.svg');
-    {% endif %}
+    
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: 4px 4px;

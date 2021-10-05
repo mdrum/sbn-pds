@@ -1,10 +1,6 @@
----
----
-{% if jekyll.environment == "production" %} 
+ 
 var basepath = '/pds/'
-{% else %}
-var basepath = '/'
-{% endif %}
+
 var searchData = [{
         name: 'Altimetry',
         subtitle: '',

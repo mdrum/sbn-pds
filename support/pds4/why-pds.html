@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <base href="/pds/" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Why PDS? | PDS SBN Asteroid/Dust Subnode</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main20210813.css">
+    <link rel="stylesheet" href="css/header20210331.css">
+    <link rel="stylesheet" href="css/footer20210331.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    <!-- PDS Feedback Widget -->
+    <!-- Only add JQuery if you do not already include a library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+    <link rel="stylesheet" href="feedback/css/feedback.css"  type="text/css" media="screen" />
+    <script src="feedback/js/modernizr-custom.js"></script>
+    <script src="feedback/js/config.js"></script>
+    <script src="feedback/js/feedback.js"></script>
+    <!-- -->
+
+
+    </head>
+<body>
+
+    <!-- BEGIN sbn-header -->
+
+<header>
+    <div id="sbn-header">
+
+        <div class="sbn-title-container">
+            <div class="sbn-title"><a class="ignore-a-styling" href="http://pdssbn.astro.umd.edu/">PDS Small Bodies Node</a></div>
+            <a class="sbn-subtitle ignore-a-styling" href="">Asteroid/Dust Subnode</a>
+        </div>
+        <div class="gradient-bar"></div>
+    </div>
+</header>
+<nav>
+    
+    <div id="menu-backdrop"></div>
+    <div id="menu-drawer">
+        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </div>
+
+    <div id="theme-switch">
+        <label for="theme-switch-checkbox">
+            <input type="checkbox" id="theme-switch-checkbox" />
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 24 24" width="30" title="Change light/dark theme">
+                <title>Change light/dark theme</title>
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z" />
+            </svg>
+      </label>
+    </div>
+    <div id="menu">
+        <div class="menu-handle">
+            <div>Find Data</div>
+            <ul class="menu-list">
+                <li><a href="">Archive Home</a></li>
+                <li class="divider"></li>
+                <li><a href="archive/data-types.html"> Browse by Data Type</a></li>
+                <li><a href="archive/target-types.html"> Browse by Target Type</a></li>
+                <li><a href="archive/missions.html"> Browse by Mission</a></li>
+                <li class="divider"></li>
+                <li><a href="ferret/">Ferret - Target Search</a></li>
+                <li><a href="sbib/">SBIB - Image Search</a></li>
+                <li><a href="https://catch.astro.umd.edu/">CATCH - Survey Search</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>Archive Data</div>
+            <ul class="menu-list">
+                <li><a href="olafs">OLAF - Archive your data</a></li>
+                <li><a href="sbnarchivinghowto.html">How to Archive</a></li>
+                <li><a href="other_tools/pdf1a.html">PDF/A Tools</a></li>
+                <li><a href="https://pds.nasa.gov/datastandards/documents/current-version.shtml">PDS4 Standards</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>Support</div>
+            <ul class="menu-list">
+                <li><a href="support/">Support Home</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="support/Tips.html">Tips & Tricks Articles <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="24px" class="callout-svg-icon"><title>New!</title><path d="M0 0h24v24H0z" fill="none"/><path d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></a></li>
+                <li><a href="support/FAQ.html">Frequently Asked Questions</a></li>
+                <li><a href="support/Keyterms.html">Key Terms</a></li>
+                <li><a href="support/Glossary.html">Full Glossary</a></li>
+                <li class="divider"></li>
+                <li><a href="https://pds.nasa.gov/home/proposers/">Information for Data Proposers</a></li>
+                <li><a href="https://sbnwiki.astro.umd.edu/wiki/SBN_PDS4_Wiki">PDS4 Tutorials and Quick Ref</a></li>
+                <li><a href="http://pdssbn.astro.umd.edu/howto/understand.shtml">Using PDS Data</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>PDS Info</div>
+            <ul class="menu-list">
+                <li><a href="aboutastsubnode.html">About SBN Asteroid Subnode</a></li>
+                <li><a href="http://pdssbn.astro.umd.edu/">SBN Comet Subnode</a></li>
+                <li><a href="http://pds.nasa.gov/">PDS Home</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<div id="search-bar" class="search-container">
+    <div class="search-box" v-bind:class="{focused: focused}">
+        <svg class="search-icon" viewBox="0 0 100 125">
+            <path d="M35.285,8L85,28.228L52.303,70.575l-4.715-17.337C33,59.622,16.45,72.294,43.672,92c0,0-37.15-4.02-26.875-39.512    c0,0,4.692-16.873,23.799-24.958L35.285,8z" />
+        </svg>
+        <div class="input-field">
+            <input tabindex="0" placeholder="Shortcut to data by keyword..." type="text" aria-label="Shortcut to data by keyword"
+                v-model="query"
+                v-on:focus="onFocus"
+                v-on:keyup="keypress">
+        </div>
+    </div>
+    <div class="search-filter" v-if="focused">
+        <label class="toggle-option" v-bind:class="{focused: mode === 'asteroid'}">Asteroid/Dust <input type="radio" v-model="mode" value="asteroid"></label>
+        <label class="toggle-option" v-bind:class="{focused: mode === 'pds'}">PDS <input type="radio" v-model="mode" value="pds"></label>
+    </div>
+    <ul class="search-results" v-if="query.length > 0 && focused">
+        <template v-for="result in searchResults">
+            <li class="search-result" >
+                <a v-bind:href="result.url" v-bind:title="title(result)" tabindex="0">{{result.name}}</a>
+            </li>
+        </template>
+        <p class="no-results" v-if="searchResults.length === 0">No results found</p>
+        <p class="no-results" v-if="searchResults.length === 0">Need help finding something? <a href="contact.html">Contact Us</a></p>
+    </ul>
+</div>
+
+</nav>
+
+
+<!-- END sbn-header -->
+
+
+    <main><div class="sbn-main " >
+    <!-- BEGIN main content -->
+
+    <ol class="breadcrumbs">
+    <li><a href="">Home</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/">Support</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/Tips.html">Tips & Tricks</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/pds4/">PDS4</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li>Why PDS?</li>
+</ol> 
+<br/>
+
+<h1 class="post-title">Why PDS?</h1>
+<p class="post-subtitle secondary">Sep 17, 2021 
+    
+    (by Jesse Stone)
+    
+</p>
+
+<p class="secondary"><em> Part of a series on <a href="support/pds4/">PDS4</a> </em></p>
+
+
+<div class="social-post">
+    <h2 id="introduction">Introduction</h2>
+
+<figure><img src="https://pdsregistryimages.psi.edu/tips/Why-PDS/tape2.png" /><figcaption>It's hard to read a tape when you can't get the reader.</figcaption></figure>
+
+<p>Let’s start with a story. Lunar Orbiter was a series of missions that ran from 1966-1967, in support of the Apollo missions. The data was no longer considered useful after Apollo, so the tapes containing the data were forgotten for 20 years. After 20 years, the tapes would have been discarded if not for Nancy Evans, an archivist at the Jet Propulsion Laboratory. She began the Lunar Orbiter Image Recovery Project, intended to retrieve and preserve the data from these tapes. It was difficult to retrieve the data from the tapes, since the tapes required special readers that were no longer in production. Additionally, the recovered data was not usable at first, and required additional special hardware to convert to a digital format. The first images from this project were not recovered until 2008, over 40 years after the mission first launched.</p>
+
+<p>There are many lessons that can be learned from this story. While the tapes themselves were initially archived, the hardware to read them was not, and those tapes were never converted to new formats. Then, they were nearly discarded. It is only a long chain of hard work and luck that made it possible to recover the data.</p>
+
+<p>All data has value beyond its intended scope. On top of this, it is irreplaceable. Even if you had the money to launch a new mission, you would never reproduce data that was lost.</p>
+
+<p>This is the mission of the PDS: to prevent data from being destroyed, lost, or forgotten.</p>
+
+<h2 id="what-can-happen-to-data">What Can Happen to Data</h2>
+
+<figure><img src="https://pdsregistryimages.psi.edu/tips/Why-PDS/zipdrive.png" /><figcaption>Zip disks were infamous for the click of death -- These were all the rage in the 90's, but now they are impossible to find.</figcaption></figure>
+
+<p>Without being actively archived and maintained, data is vulnerable to many risks. It can be physically destroyed or deleted, it can be made inaccessible when the tools to read it are gone, or it can become incomprehensible when the knowledge to interpret it is lost. Finally, even if it is readable, it might become unusable if the context around the observations are lost. A picture of an asteroid is nothing more than a wallpaper if you don’t know where and when it was taken.</p>
+
+<p>There are some ways to protect against these risks. Physical destruction can be prevented by keeping multiple copies of the data. The protection is better if the copies are far apart. Physical obsolescence can be protected against by either keeping all of the equipment needed to read media, or regularly moving data to modern media. Logical obsolescence can be protected against by keeping copies of all of the important documentation with the data, and keeping the data in formats that are likely to be supported in the future.</p>
+
+<h2 id="how-does-the-pds-protect-data">How Does the PDS Protect Data?</h2>
+
+<figure><img src="https://pdsregistryimages.psi.edu/tips/Why-PDS/cdshelf.png" /><figcaption>PDS will make sure that you aren't stuck with a shelf of CDs</figcaption></figure>
+
+<p>Archiving your data in the PDS is an important and easy way to protect it. Once it is archived, PDS will take over maintenance of the data files. PDS will also take steps to physically protect the data, keep the data on readable media, and ensure that the data remains documented well enough to be usable.</p>
+
+<p>PDS prefers open formats, especially those defined by a standards body like ISO or ANSI. PDS prefers to keep data formats as simple as possible. This means that the data products that are archived the most are images and data tables. The advantage to this approach is that anybody can read the data with simple programming tools. This simplicity ensures that specialized knowledge required to read in the data is not lost to time.</p>
+
+<p>The data in PDS is self contained. Whenever possible, critical artifacts, such as documentation, are included with the data products. This ensures that everything needed to understand the data is readily available. Naturally, this documentation is stored in a long-lasting format, either in plain-text, which is as simple as possible, or as a PDF/A, a rigorously defined international standard designed for long-term archiving.</p>
+
+<p>PDS requires that all of its archived data comes with comprehensive metadata. The metadata documents everything about a data file, including its internal structure, the chain of instruments that created the data, and time and place where the data was created. This prevents data from being misinterpreted.</p>
+
+<p>PDS maintains the files themselves and ensures that they are kept on readable media. Currently, all data is stored on servers accessible over the internet via HTTPS. Data will be moved to other, more modern formats as needed. PDS also ensures that the metadata is kept up to date and readable. PDS nodes are currently hard at work migrating older data to the latest version of the PDS standard.</p>
+
+<p>PDS also takes steps to ensure that data is not physically destroyed. Multiple copies of the data are kept in geographically separated regions. This is accomplished in many ways, such as mutual hosting between PDS nodes, using cloud services such as <a href="https://aws.amazon.com">Amazon AWS</a>, or storing data in a deep archive such as <a href="https://nssdc.gsfc.nasa.gov">NSSDCA</a>. This ensures that a natural disaster or cyberattack does not destroy every copy of the data. In addition, data is regularly checked for integrity. This ensures that the data has not been altered, accidentally or otherwise.</p>
+
+<h2 id="making-data-accessible">Making Data Accessible</h2>
+
+<figure><img src="https://pdsregistryimages.psi.edu/tips/Why-PDS/cloud.png" /><figcaption>There's at least a little bit of cloud in the PDS.</figcaption></figure>
+
+<p>Finally, PDS ensures that your data remains accessible to the world. It does so by providing a central repository of data along with a variety of search services. This helps, because data is only useful if it can be found. It’s also better if everyone in the community can find the same data. To make finding data easier, PDS assigns a unique identifier to every data product. This ensures each product can be easily discovered and referenced called a <a href="https://sbn.psi.edu/pds/support/Tips.html">LID</a>. PDS also provides DOIs for data, ensuring that other organizations can find data.</p>
+
+<h3 id="who-can-get-data-from-the-pds">Who Can Get Data from the PDS?</h3>
+
+<p>Data archived in PDS is available to everyone with no limits on distribution. It is usable by all communities including researchers, students, and citizen scientists. Data in the PDS is available for use by other projects and can be referenced when writing proposals for funding.</p>
+
+<h3 id="who-can-add-data-to-the-pds">Who Can Add Data to the PDS?</h3>
+
+<p>A variety of groups can archive data through the PDS as well. Scientists may archive their results in the PDS, which is analogous to publishing the data. Larger projects, such as missions and ground-based surveys, may archive their data. Regardless of who submits data to the PDS, it is subjected to a rigorous peer-review process ensuring that the data and metadata are high-quality and scientifically useful.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<figure><img src="https://pdsregistryimages.psi.edu/tips/Why-PDS/keyboard.png" /><figcaption>Because there are no do-overs in space.</figcaption></figure>
+
+<p>Spacecraft data is very valuable and often irreplaceable. It is also very vulnerable to a variety of risks that could make it inaccessible to the community and to future generations. The PDS provides an archive that will protect data from these risks and makes the data available to the scientific community and to the world at large. Anyone who produces planetary data should consider archiving their data with the PDS in order to keep it safe and accessible.</p>
+
+</div>
+
+
+    <!-- END main content -->
+    </div></main>
+
+    <!-- BEGIN sbn-footer -->
+
+<footer class="sbn-footer">
+    <p class="sbn-footer-text">
+        For questions about the data sets or this web site, contact Carol Neese (<a href="mailto:neese@psi.edu" class="link">neese@psi.edu</a>).
+    </p>
+</footer>
+
+<div class="sbn-footer-extended">
+    <aside class="sbn-footer-psi-container">
+        <img src="images/PSI_Logo.png" alt="PSI Logo" title="PSI Logo" class="psi-logo">
+        <span>Hosted by the Planetary Science Institute</span>
+    </aside>
+</div>
+
+<!-- END sbn-footer -->
+
+
+    
+
+
+    <script src="js/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/search-data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/scripts20210813.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
