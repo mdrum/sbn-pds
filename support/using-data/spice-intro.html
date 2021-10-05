@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <base href="/pds/" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>What is SPICE and why do we care? | PDS SBN Asteroid/Dust Subnode</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main20210813.css">
+    <link rel="stylesheet" href="css/header20210331.css">
+    <link rel="stylesheet" href="css/footer20210331.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    <!-- PDS Feedback Widget -->
+    <!-- Only add JQuery if you do not already include a library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+    <link rel="stylesheet" href="feedback/css/feedback.css"  type="text/css" media="screen" />
+    <script src="feedback/js/modernizr-custom.js"></script>
+    <script src="feedback/js/config.js"></script>
+    <script src="feedback/js/feedback.js"></script>
+    <!-- -->
+
+
+    </head>
+<body>
+
+    <!-- BEGIN sbn-header -->
+
+<header>
+    <div id="sbn-header">
+
+        <div class="sbn-title-container">
+            <div class="sbn-title"><a class="ignore-a-styling" href="http://pdssbn.astro.umd.edu/">PDS Small Bodies Node</a></div>
+            <a class="sbn-subtitle ignore-a-styling" href="">Asteroid/Dust Subnode</a>
+        </div>
+        <div class="gradient-bar"></div>
+    </div>
+</header>
+<nav>
+    
+    <div id="menu-backdrop"></div>
+    <div id="menu-drawer">
+        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </div>
+
+    <div id="theme-switch">
+        <label for="theme-switch-checkbox">
+            <input type="checkbox" id="theme-switch-checkbox" />
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 24 24" width="30" title="Change light/dark theme">
+                <title>Change light/dark theme</title>
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z" />
+            </svg>
+      </label>
+    </div>
+    <div id="menu">
+        <div class="menu-handle">
+            <div>Find Data</div>
+            <ul class="menu-list">
+                <li><a href="">Archive Home</a></li>
+                <li class="divider"></li>
+                <li><a href="archive/data-types.html"> Browse by Data Type</a></li>
+                <li><a href="archive/target-types.html"> Browse by Target Type</a></li>
+                <li><a href="archive/missions.html"> Browse by Mission</a></li>
+                <li class="divider"></li>
+                <li><a href="ferret/">Ferret - Target Search</a></li>
+                <li><a href="sbib/">SBIB - Image Search</a></li>
+                <li><a href="https://catch.astro.umd.edu/">CATCH - Survey Search</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>Archive Data</div>
+            <ul class="menu-list">
+                <li><a href="olafs">OLAF - Archive your data</a></li>
+                <li><a href="sbnarchivinghowto.html">How to Archive</a></li>
+                <li><a href="other_tools/pdf1a.html">PDF/A Tools</a></li>
+                <li><a href="https://pds.nasa.gov/datastandards/documents/current-version.shtml">PDS4 Standards</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>Support</div>
+            <ul class="menu-list">
+                <li><a href="support/">Support Home</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="support/Tips.html">Tips & Tricks Articles <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="24px" class="callout-svg-icon"><title>New!</title><path d="M0 0h24v24H0z" fill="none"/><path d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></a></li>
+                <li><a href="support/FAQ.html">Frequently Asked Questions</a></li>
+                <li><a href="support/Keyterms.html">Key Terms</a></li>
+                <li><a href="support/Glossary.html">Full Glossary</a></li>
+                <li class="divider"></li>
+                <li><a href="https://pds.nasa.gov/home/proposers/">Information for Data Proposers</a></li>
+                <li><a href="https://sbnwiki.astro.umd.edu/wiki/SBN_PDS4_Wiki">PDS4 Tutorials and Quick Ref</a></li>
+                <li><a href="http://pdssbn.astro.umd.edu/howto/understand.shtml">Using PDS Data</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>PDS Info</div>
+            <ul class="menu-list">
+                <li><a href="aboutastsubnode.html">About SBN Asteroid Subnode</a></li>
+                <li><a href="http://pdssbn.astro.umd.edu/">SBN Comet Subnode</a></li>
+                <li><a href="http://pds.nasa.gov/">PDS Home</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<div id="search-bar" class="search-container">
+    <div class="search-box" v-bind:class="{focused: focused}">
+        <svg class="search-icon" viewBox="0 0 100 125">
+            <path d="M35.285,8L85,28.228L52.303,70.575l-4.715-17.337C33,59.622,16.45,72.294,43.672,92c0,0-37.15-4.02-26.875-39.512    c0,0,4.692-16.873,23.799-24.958L35.285,8z" />
+        </svg>
+        <div class="input-field">
+            <input tabindex="0" placeholder="Shortcut to data by keyword..." type="text" aria-label="Shortcut to data by keyword"
+                v-model="query"
+                v-on:focus="onFocus"
+                v-on:keyup="keypress">
+        </div>
+    </div>
+    <div class="search-filter" v-if="focused">
+        <label class="toggle-option" v-bind:class="{focused: mode === 'asteroid'}">Asteroid/Dust <input type="radio" v-model="mode" value="asteroid"></label>
+        <label class="toggle-option" v-bind:class="{focused: mode === 'pds'}">PDS <input type="radio" v-model="mode" value="pds"></label>
+    </div>
+    <ul class="search-results" v-if="query.length > 0 && focused">
+        <template v-for="result in searchResults">
+            <li class="search-result" >
+                <a v-bind:href="result.url" v-bind:title="title(result)" tabindex="0">{{result.name}}</a>
+            </li>
+        </template>
+        <p class="no-results" v-if="searchResults.length === 0">No results found</p>
+        <p class="no-results" v-if="searchResults.length === 0">Need help finding something? <a href="contact.html">Contact Us</a></p>
+    </ul>
+</div>
+
+</nav>
+
+
+<!-- END sbn-header -->
+
+
+    <main><div class="sbn-main " >
+    <!-- BEGIN main content -->
+
+    <ol class="breadcrumbs">
+    <li><a href="">Home</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/">Support</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/Tips.html">Tips & Tricks</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/using-data/">Using Data</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li>What is SPICE and why do we care?</li>
+</ol> 
+<br/>
+
+<h1 class="post-title">What is SPICE and why do we care?</h1>
+<p class="post-subtitle secondary">Aug 17, 2021 
+    
+    (by Eric Palmer)
+    
+</p>
+
+<p class="secondary"><em> Part of a series on <a href="support/using-data/">Using Data</a> </em></p>
+
+
+<div class="social-post">
+    <p>Does the idea of translating the pixel/line location on an image into a latitude/longitude hurt your brain?  It can be especially difficult to dig out the information about where the spacecraft and asteroid were and what their orientations were when the picture was taken.</p>
+
+<p>One of the more tricky aspects of asteroid operations is keeping track of coordinate frames:  You could work in inertial, galactic, ecliptic, equatorial, J2000, body-fixed frame, spacecraft frame, topocentric frame and even the image’s frame.  If you’ve had to deal with flight missions, you’ve surely seen that every system has a specific frame that is native to itself.  Thus, if you want to find out where something was or where it was looking at a specific time, you have to do multiple frame/coordinate transformations, which is an outstanding activity to do while you are waiting for a root canal.</p>
+
+<p>If every space mission needs to do an excessive number of frame translations, you would hope that someone would have done something to make this easier – they have!</p>
+
+<h2 id="spice">SPICE</h2>
+
+<p><a href="https://naif.jpl.nasa.gov/naif/">SPICE</a> is what most NASA and international planetary missions use to compute navigation and observation geometry parameters needed to process science data and support mission operations.  It was developed at the Jet Propulsion Laboratory (JPL) by the Navigation and Ancillary Information Facility (NAIF) team.  SPICE is an acronym that stands for Spacecraft, Planet, Instrument, C-matrix (or Camera Matrix) and Events.</p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>Flight missions store information about the position and orientation of the spacecraft, indexed by time, in data files called SPICE kernels. NAIF provides additional multi-mission kernels with position, orientation, and shape/size data for the solar system bodies. Once you have a complete set of these kernels, you can use them in software that calls the SPICE library APIs to calculate nearly any observation geometry parameters you want.</p>
+
+<p>For scientists, we typically use them to see where on the surface an image or measurement was taken.  Obviously, this requires that we know where the spacecraft was, where the asteroid was, where the spacecraft was pointing, what orientation the camera was to the spacecraft and when the image was taken.</p>
+
+<p>The kernels that contain these main types of information are:</p>
+<ul>
+  <li>The position of the planets and other natural bodies – SP-kernel (SPK)</li>
+  <li>The orientation of the planets  and other natural bodies – PC-kernel (PCK)</li>
+  <li>The position of the spacecraft – SP-kernel (SPK)</li>
+  <li>The orientation of the spacecraft and any articulating structures – C-kernel (CK)</li>
+  <li>The geometric parameters of the instruments – Instrument-kernel (IK)</li>
+  <li>The definitions of the instrument and spacecraft reference frames – Frames-kernel (FK)</li>
+  <li>The correlation of the on-board time to UTC – Spacecraft Clock-kernel (SCLK)</li>
+  <li>The leapseconds needed for conversion between UTC and Ephemeris Time – Leapsecond-kernel (LSK)</li>
+  <li>The digital shape data for natural bodies – Digital Shape-kernel (DSK) or Planetary Constants Kernel (PCK)</li>
+</ul>
+
+<p>Kernels may be text or binary files, and have different extensions depending on their types:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Information Type</th>
+      <th>Kernel</th>
+      <th>Text</th>
+      <th>Binary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Position of spacecraft or natural object</td>
+      <td>SPK</td>
+      <td>—</td>
+      <td>.bsp</td>
+    </tr>
+    <tr>
+      <td>Spacecraft or platform orientation</td>
+      <td>CK</td>
+      <td>—</td>
+      <td>.bc</td>
+    </tr>
+    <tr>
+      <td>Instrument parameters</td>
+      <td>IK</td>
+      <td>.ti</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Reference frame defintions</td>
+      <td>FK</td>
+      <td>.tf</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Planetary Constants</td>
+      <td>PCK</td>
+      <td>.tpc</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>High Precision Planetary Orientation</td>
+      <td>PCK</td>
+      <td>—</td>
+      <td>.bpc</td>
+    </tr>
+    <tr>
+      <td>Leapseconds</td>
+      <td>LSK</td>
+      <td>.tls</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Spacecraft Clock Correlation</td>
+      <td>SCLK</td>
+      <td>.tsc</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Digital Shape models</td>
+      <td>DSK</td>
+      <td>—</td>
+      <td>.bds</td>
+    </tr>
+    <tr>
+      <td>Metakernel aggregating sets of kernels</td>
+      <td>MK</td>
+      <td>.tm</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="what-else-is-it">What else is it</h2>
+
+<p>SPICE is more than just kernel files containing information needed to calculate navigation and observation geometry. As already mentioned it also includes a set of software tools and libraries.  Most of the tools are provided just to help manage the kernels, while the biggest component of SPICE is the library containing a large selection of APIs that can be used within user-built programs to do all of the needed geometry calculations.  Thus, if you are a programmer and want to calculate the resolution of a pixel on the surface or the coordinates of the sub-solar point when a specific image was taken, you can use the appropriate SPICE library APIs and sets of SPICE kernels.  The SPICE software library developed by NAIF is available in a variety of languages:</p>
+<ul>
+  <li>FORTRAN 77</li>
+  <li>C</li>
+  <li>IDL</li>
+  <li>MATLAB</li>
+  <li>Java Native Interface (JNI)</li>
+</ul>
+
+<p>Third parties have built a few additional interfaces to SPICE libraries in</p>
+<ul>
+  <li>Python (SpiceyPy)</li>
+  <li>Ruby</li>
+  <li>Julia</li>
+</ul>
+
+<h2 id="getting-training-and-help">Getting training and help</h2>
+
+<p>The NAIF group has provided a significant amount of documentation about SPICE.</p>
+
+<ul>
+  <li>They have made an entire suite of on-line <a href="https://naif.jpl.nasa.gov/naif/tutorials.html]">training tutorials</a> and <a href="https://naif.jpl.nasa.gov/naif/self_training.html">Self Training</a> directions.</li>
+  <li>Every function call that SPICE supports has a complete documentation that describes its use and provides examples.  <a href="https://naif.jpl.nasa.gov/naif/documentation.html">Documentation</a></li>
+  <li>NAIF hosts in person <a href="https://naif.jpl.nasa.gov/naif/training.html">training classes</a></li>
+  <li>There are hands-on <a href="https://naif.jpl.nasa.gov/naif/lessons.html">programming lessons</a> presenting detailed SPICE-based solutions for a few common observation geometry cases.</li>
+  <li>If you can’t write your own code, you can use NAIF’s a web tool that let’s you do calculations using the wealth of SPICE data available on the NAIF server <a href="https://naif.jpl.nasa.gov/naif/webgeocalc.html">WebGeocalc</a></li>
+  <li>NAIF also provides a tool to visualize space mission and Solar system based on SPICE data <a href="https://naif.jpl.nasa.gov/naif/cosmographia.html">Cosmographia</a></li>
+</ul>
+
+<h2 id="the-data">The Data</h2>
+
+<p>Finally, NAIF carefully selects, validates, documents and <a href="https://naif.jpl.nasa.gov/naif/data_archived.html">archives</a> the SPICE kernels for the missions flown by NASA.  Note, the number and size of the SPICE files can get very large by the end of a mission.</p>
+
+<h2 id="free">Free</h2>
+
+<p>All of the data and tools generated by NAIF are free and in the public domain.  Anyone can use them for whatever purposes they desire.</p>
+
+<h2 id="enduring">Enduring</h2>
+
+<p>All of the SPICE software and data files (kernels) are fully backwards compatible; you need not worry about old SPICE data files or software continuing to work into the future.</p>
+
+<h2 id="thank-goodness-for-spice">Thank Goodness for SPICE</h2>
+
+<p>Hopefully if you have read this far you now understand why we at the PDS are grateful for the SPICE information system. SPICE has turned the tedious and long task of computing observation geometry into a reusable and highly accurate process. Furthermore for those who are new to working with SPICE, NAIF has provided a plethora of training and help options to make learning and using the data as painless as possible. SPICE is an essential part of the archiving database here at SBN PDS and we know it will make using archived data easier for years to come.</p>
+
+</div>
+
+
+    <!-- END main content -->
+    </div></main>
+
+    <!-- BEGIN sbn-footer -->
+
+<footer class="sbn-footer">
+    <p class="sbn-footer-text">
+        For questions about the data sets or this web site, contact Carol Neese (<a href="mailto:neese@psi.edu" class="link">neese@psi.edu</a>).
+    </p>
+</footer>
+
+<div class="sbn-footer-extended">
+    <aside class="sbn-footer-psi-container">
+        <img src="images/PSI_Logo.png" alt="PSI Logo" title="PSI Logo" class="psi-logo">
+        <span>Hosted by the Planetary Science Institute</span>
+    </aside>
+</div>
+
+<!-- END sbn-footer -->
+
+
+    
+
+
+    <script src="js/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/search-data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/scripts20210813.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
