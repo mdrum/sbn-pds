@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <base href="/pds/" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>LIDs And LIDVIDs | PDS SBN Asteroid/Dust Subnode</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main20210813.css">
+    <link rel="stylesheet" href="css/header20210331.css">
+    <link rel="stylesheet" href="css/footer20210331.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    <!-- PDS Feedback Widget -->
+    <!-- Only add JQuery if you do not already include a library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+    <link rel="stylesheet" href="feedback/css/feedback.css"  type="text/css" media="screen" />
+    <script src="feedback/js/modernizr-custom.js"></script>
+    <script src="feedback/js/config.js"></script>
+    <script src="feedback/js/feedback.js"></script>
+    <!-- -->
+
+
+    </head>
+<body>
+
+    <!-- BEGIN sbn-header -->
+
+<header>
+    <div id="sbn-header">
+
+        <div class="sbn-title-container">
+            <div class="sbn-title"><a class="ignore-a-styling" href="http://pdssbn.astro.umd.edu/">PDS Small Bodies Node</a></div>
+            <a class="sbn-subtitle ignore-a-styling" href="">Asteroid/Dust Subnode</a>
+        </div>
+        <div class="gradient-bar"></div>
+    </div>
+</header>
+<nav>
+    
+    <div id="menu-backdrop"></div>
+    <div id="menu-drawer">
+        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </div>
+
+    <div id="theme-switch">
+        <label for="theme-switch-checkbox">
+            <input type="checkbox" id="theme-switch-checkbox" />
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 24 24" width="30" title="Change light/dark theme">
+                <title>Change light/dark theme</title>
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z" />
+            </svg>
+      </label>
+    </div>
+    <div id="menu">
+        <div class="menu-handle">
+            <div>Find Data</div>
+            <ul class="menu-list">
+                <li><a href="">Archive Home</a></li>
+                <li class="divider"></li>
+                <li><a href="archive/data-types.html"> Browse by Data Type</a></li>
+                <li><a href="archive/target-types.html"> Browse by Target Type</a></li>
+                <li><a href="archive/missions.html"> Browse by Mission</a></li>
+                <li class="divider"></li>
+                <li><a href="ferret/">Ferret - Target Search</a></li>
+                <li><a href="sbib/">SBIB - Image Search</a></li>
+                <li><a href="https://catch.astro.umd.edu/">CATCH - Survey Search</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>Archive Data</div>
+            <ul class="menu-list">
+                <li><a href="olafs">OLAF - Archive your data</a></li>
+                <li><a href="sbnarchivinghowto.html">How to Archive</a></li>
+                <li><a href="other_tools/pdf1a.html">PDF/A Tools</a></li>
+                <li><a href="https://pds.nasa.gov/datastandards/documents/current-version.shtml">PDS4 Standards</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>Support</div>
+            <ul class="menu-list">
+                <li><a href="support/">Support Home</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="support/Tips.html">Tips & Tricks Articles <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="24px" class="callout-svg-icon"><title>New!</title><path d="M0 0h24v24H0z" fill="none"/><path d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></a></li>
+                <li><a href="support/FAQ.html">Frequently Asked Questions</a></li>
+                <li><a href="support/Keyterms.html">Key Terms</a></li>
+                <li><a href="support/Glossary.html">Full Glossary</a></li>
+                <li class="divider"></li>
+                <li><a href="https://pds.nasa.gov/home/proposers/">Information for Data Proposers</a></li>
+                <li><a href="https://sbnwiki.astro.umd.edu/wiki/SBN_PDS4_Wiki">PDS4 Tutorials and Quick Ref</a></li>
+                <li><a href="http://pdssbn.astro.umd.edu/howto/understand.shtml">Using PDS Data</a></li>
+            </ul>
+        </div>
+        <div class="menu-handle">
+            <div>PDS Info</div>
+            <ul class="menu-list">
+                <li><a href="aboutastsubnode.html">About SBN Asteroid Subnode</a></li>
+                <li><a href="http://pdssbn.astro.umd.edu/">SBN Comet Subnode</a></li>
+                <li><a href="http://pds.nasa.gov/">PDS Home</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<div id="search-bar" class="search-container">
+    <div class="search-box" v-bind:class="{focused: focused}">
+        <svg class="search-icon" viewBox="0 0 100 125">
+            <path d="M35.285,8L85,28.228L52.303,70.575l-4.715-17.337C33,59.622,16.45,72.294,43.672,92c0,0-37.15-4.02-26.875-39.512    c0,0,4.692-16.873,23.799-24.958L35.285,8z" />
+        </svg>
+        <div class="input-field">
+            <input tabindex="0" placeholder="Shortcut to data by keyword..." type="text" aria-label="Shortcut to data by keyword"
+                v-model="query"
+                v-on:focus="onFocus"
+                v-on:keyup="keypress">
+        </div>
+    </div>
+    <div class="search-filter" v-if="focused">
+        <label class="toggle-option" v-bind:class="{focused: mode === 'asteroid'}">Asteroid/Dust <input type="radio" v-model="mode" value="asteroid"></label>
+        <label class="toggle-option" v-bind:class="{focused: mode === 'pds'}">PDS <input type="radio" v-model="mode" value="pds"></label>
+    </div>
+    <ul class="search-results" v-if="query.length > 0 && focused">
+        <template v-for="result in searchResults">
+            <li class="search-result" >
+                <a v-bind:href="result.url" v-bind:title="title(result)" tabindex="0">{{result.name}}</a>
+            </li>
+        </template>
+        <p class="no-results" v-if="searchResults.length === 0">No results found</p>
+        <p class="no-results" v-if="searchResults.length === 0">Need help finding something? <a href="contact.html">Contact Us</a></p>
+    </ul>
+</div>
+
+</nav>
+
+
+<!-- END sbn-header -->
+
+
+    <main><div class="sbn-main " >
+    <!-- BEGIN main content -->
+
+    <ol class="breadcrumbs">
+    <li><a href="">Home</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/">Support</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/Tips.html">Tips & Tricks</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li><a href="support/pds4/">PDS4</a></li>
+    <li class="breadcrumbs-separator">/</li>
+    <li>LIDs And LIDVIDs</li>
+</ol> 
+<br/>
+
+<h1 class="post-title">LIDs And LIDVIDs</h1>
+<p class="post-subtitle secondary">Sep 24, 2021 
+    
+</p>
+
+<p class="secondary"><em> Part of a series on <a href="support/pds4/">PDS4</a> </em></p>
+
+
+<div class="social-post">
+    <p>Have you ever wondered how the PDS tracks and organizes all of the data in the archive?  No?  Well, we have.  In the past, each dataset was tracked by each node and by its title.  However, that didn’t allow for focused searching and easily finding data – thus, we updated our organization system when we created PDS4.</p>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>One of the great advantages of the PDS4 archiving standard is that every data product has a unique identifier called a <strong>LID</strong> (Logical Identifier) which makes it possible for everything in the PDS archive to be securely referenced.  The LID is a well-defined character string unique to each product.  Each PDS4 product also has a <strong>VID</strong>, or Version ID, to identify the specific version. The nuts and bolts of PDS4 provide structures to make different types of references between products with different kinds of relationships. The LIDs and VIDs are also used behind the scenes to support search so PDS can serve the desired data to users. Finally, the <strong>LIDVID</strong> (combined LID and VID) of a product provides a permanent identifier which will securely reference a specific version of a specific product over the lifetime of the PDS archive, perhaps hundreds of years.</p>
+
+<h3 id="who-needs-to-know-about-lids-and-why">Who Needs to Know About LIDs and Why?</h3>
+
+<p>Many <strong>data users</strong> may be able to get by without knowing much about LIDs and their structures, but knowing how to use them can be a real help.  For example, the label of a calibrated data file will likely contain a internal LID references to the raw file it’s based on and the calibration files used to calibrate it.  The user should be able to figure out how to map raw products onto calibrated products from the archive documentation, but being able to access this information directly could be very useful, and having the information available for computer code could be even more useful.  In another example, data products can refer by LID to relevant documents.  Knowing how to parse the LID reference can make it easier to find the relevant products and documents.</p>
+
+<p><strong>Individual data providers using OLAF</strong> (On-Line Archiving Facility) don’t need to know about the LIDs because OLAF assigns them and implements them in all the products.</p>
+
+<p><strong>Data Providers</strong>, however, can gain significant benefit to understanding how to use the LIDs and how they apply to your own data set.</p>
+
+<h3 id="no-two-are-alike---namespaces-ensure-uniqueness">No Two are Alike - Namespaces Ensure Uniqueness</h3>
+
+<p>For the LID system to work, each LID must be unique across the entire universe of LIDs (which goes well beyond PDS).  This ensures that a reference by LID always refers to a single well-identified product.  Uniqueness is achieved by means of <strong>namespaces</strong>.  To understand how this works, let’s look a little closer at the structure of a LID.</p>
+
+<p>A LID is a string separated into substrings by colons.  Here’s an example LID:</p>
+
+<blockquote>
+  <p><strong>urn:nasa:pds:orex.ola</strong></p>
+</blockquote>
+
+<p>The alert reader will have spotted that the substrings are separated by colons except the last one, which uses a period.  This is not a typo, read on…</p>
+
+<p>The first substring, <strong>urn</strong>, is “universal resource name” and just specifies that this string is a LID.  The second substring, <strong>nasa</strong>, specifies that this LID belongs to NASA.  Since all NASA LIDs start with <strong>urn:nasa</strong>, they only have to be unique within NASA and don’t have to worry about LIDs assigned by other entities.</p>
+
+<p>The next substring is <strong>pds</strong>, specifying that the LID is for a product archived at the Planetary Data System (PDS).  LIDs starting with <strong>urn:nasa:pds</strong> only have to be unique within the PDS archive and don’t have to worry about conflicting with LIDs in other NASA archives.</p>
+
+<p>This particular LID is for the archive bundle containing all the data from the OLA instrument on the <strong>OSIRIS-REx</strong> mission to the asteroid Bennu.  (OLA = OSIRIS-REx Laser Altimeter).   The OSIRIS-REx mission was assigned the namespace <strong>orex</strong>, so they can prefix the bundle substring for all their archive bundles with <strong>orex</strong>.  OSIRIS-REx adding their mission namespace with an abbreviation for the instrument, separated by a period: <strong>orex.ola</strong>.  The full LID, <strong>urn:nasa:pds:orex.ola</strong>, references the archive bundle containing all the raw and calibrated data from the OLA instrument on the OSIRIS-REx mission.  The OLA team doesn’t have to worry about LID conflicts with any other archive bundles, even within their own mission.</p>
+
+<p>This process is continued with additional substrings down to the level of individual data files and documents.  To understand how this works you need to know a little about how PDS archives are structured.</p>
+
+<h3 id="pds-archive-structure-and-lids">PDS Archive Structure and LIDs</h3>
+
+<p>A typical archive package is a bundle – a group of related products.  The bundle id typically follows the format described above <mission>.<instrument>.</instrument></mission></p>
+
+<blockquote>
+  <p><strong>Bundle</strong>:  urn:nasa:pds:[bundle_id]</p>
+</blockquote>
+
+<p>Within each bundle is one or more subgroups, which we call collections.  All of the data products (the actual files themselves) will be put into collections.  What is organized into the collections rather than being made in to a separate bundle has been left somewhat flexible, but as a general rule, a bundle is a single instrument while collections are the next most logical subgrouping (such as documents, raw, calibrated, etc.)</p>
+
+<blockquote>
+  <p><strong>Collection</strong>:  urn:nasa:pds:[bundle_id]:[collection_id]</p>
+</blockquote>
+
+<p>Finally, tacked on to the end of all of that is the product name.  Every data and document file has its own LID so that it can be referenced.  Also, a product LID provides enough information to find the exact bundle and collection it came from, allowing better provenance.</p>
+
+<blockquote>
+  <p><strong>Basic Product</strong>:  urn:nasa:pds:[bundle_id]:[collection_id]:[product_id]</p>
+</blockquote>
+
+<p>An example:  the calibrated data collection in the OLA bundle has the LID <strong>urn:nasa:pds:orex.ola:data_calibrated</strong>, and a single OLA calibrated data file has the LID <strong>urn:nasa:pds:orex.ola:data_calibrated:20190701_ola_scil2id04000_v003_calv2.dat</strong>.</p>
+
+<p>The [product_id] is based on the filename of the data or document file, which in this case is 20190701_ola_scil2id04000_V003_calv2.dat.  The [product_id] may vary slightly from the filename because of the LID character restrictions, and may or may not include the path or the extension.</p>
+
+<h3 id="vids-and-lidvids">VIDs and LIDVIDS</h3>
+
+<p>The <strong>VID</strong> or Version ID is a number starting at 1.0 and incremented by a whole number whenever significant changes are made to the data (such as recalibration or adding more data).  The VID is incremented by a tenth when minor changes are made.</p>
+
+<p>The VID can be appended to the LID with a double colon to make the <strong>LIDVID</strong>.  Here’s the LIDVID of the most recent version of the OSIRIS-REx OLA calibrated collection:  <strong>urn:nasa:pds:orex.ola:data_calibrated::3.0</strong>.  Its VID has been incremented each time new data from Bennu is delivered into the collection, three times now.</p>
+
+<p>You use the LIDVID when you want the exact file (or collection or bundle) that was cited.  You can use only the LID itself if you want whatever is most recent.  For example, if someone writes a paper and sites the LIDVID for an OLAF collection, you can access the exact files that was used in that paper by referencing <strong>urn:nasa:pds:orex.ola:data_calibrated::2.0</strong>, something useful for reproducing scientific results.  On the other hand, you might want the best and most recent OLA data, in which you’d use the LID itself, <strong>urn:nasa:pds:orex.ola:data_calibrated</strong>, in which you’d get version 3 (for example) that would have more data and maybe better metadata or calibration.</p>
+
+<h3 id="conclusion-and-references">Conclusion and References</h3>
+
+<p>You’ve now learned enough about LIDs and VIDs for basic understanding, and enough to know whether you need to know more for your purposes.  To learn more about LIDs and VIDs and how to use them, here are some references:</p>
+
+<p><a href="https://pds.nasa.gov/datastandards/documents/dph/current/PDS4_DataProvidersHandbook_1.16.0.pdf">The PDS4 Data Provider’s Handbook</a> chapter 5.</p>
+
+<p><a href="https://pds.nasa.gov/datastandards/documents/concepts/Concepts_1.16.0.pdf">PDS4 Concepts</a> chapter 8.</p>
+
+<p><a href="https://pds.nasa.gov/datastandards/documents/">PDS4 Documentation Page</a> with links to all the PDS4 documentation.</p>
+
+</div>
+
+
+    <!-- END main content -->
+    </div></main>
+
+    <!-- BEGIN sbn-footer -->
+
+<footer class="sbn-footer">
+    <p class="sbn-footer-text">
+        For questions about the data sets or this web site, contact Carol Neese (<a href="mailto:neese@psi.edu" class="link">neese@psi.edu</a>).
+    </p>
+</footer>
+
+<div class="sbn-footer-extended">
+    <aside class="sbn-footer-psi-container">
+        <img src="images/PSI_Logo.png" alt="PSI Logo" title="PSI Logo" class="psi-logo">
+        <span>Hosted by the Planetary Science Institute</span>
+    </aside>
+</div>
+
+<!-- END sbn-footer -->
+
+
+    
+
+
+    <script src="js/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/search-data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/scripts20210813.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
